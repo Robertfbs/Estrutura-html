@@ -9,7 +9,49 @@
 <body>
     <h1>Embeds vs Iframes</h1>
 
+
+    <!--
+        <embed> tag antiga, criada para tentar solucionar problema de muito conteúdo para carregar e sempre 
+            só mostrar todo conteúdo depois que estivesse completamente carregado, no caso de site com
+            imagem, só seria possível ler seu conteúdo, depois que tanto o texto quanto a imagem fossem
+            completamente carregados. Com <embed> esse carregamento era separado, já melhorando um pouco, 
+            sendo possível ler enquanto o vídeo carregava separeado na tag <embed>, mas ainda estava longe
+            ser a solução ideal.
+
+        <video> tag semanticamente mais indicada que a <embed>, pois já é possível saber do que se trata apenas
+            lendo o nome dad tag no código. Servindo para o mesmo intuito, porém melhor semanticamente.
+
+        <iframe> tag mais atual utilizada para adicionar conteúdo de outra página em nossa página, como um 
+            mapa do google maps ou um vídeo do youtube. Conforme exemplo abaixo. Tag mais atual. Lembrando que,
+            tanto sua página quanto a página adicionada no <iframe> estarão funcionando cada uma em seu local
+            original, apenas estando uma incorporada dentro da outra. Dessa forma, se vc clica num vídeo
+            que está numa página através da tag <iframe>, vc dará visualização diretamente à página original do
+            conteúdo que está no <iframe>, sendo um vídeo do youtube, vc dará visualização ao canal original deste
+            vídeo lá no youtube.
+            
+            ***Lembrar de tomar muito cuidado com questões de segurança em relação a tag <iframe>***.
+    -->
     
+    <embed src="https://www.youtube.com/watch?v=4zX5ebOKrwg" width="250" height="150">
+    
+    <video controls autoplay src="https://www.youtube.com/watch?v=4zX5ebOKrwg" width="250" height="150"></video>
+    
+    <iframe src="https://www.dio.me/" width="1000" height="600"></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d918.4880370296614!2d-43.211050418189444!3d-22.95198935453895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1683678762556!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rHb84bP1Ptg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, impedit necessitatibus ex aliquid sequi
+    illum error maxime soluta modi blanditiis suscipit vero et alias? A tempore quae necessitatibus 
+    consequatur alias.
+    Ex, non. Necessitatibus saepe quae natus, amet rerum odio tempora? Suscipit, optio quae aperiam sed 
+    praesentium ratione at veritatis perspiciatis sapiente asperiores quis velit unde eligendi adipisci. 
+    Porro, odit rem?
+    Eaque quia, dolores error laudantium modi exercitationem? Obcaecati totam quis expedita exercitationem 
+    facilis ipsam dolore, delectus vitae amet vel tempora repudiandae consectetur adipisci similique ad? 
+    Sint facere itaque eius dolor.</p>
 
 </body>
 </html>
